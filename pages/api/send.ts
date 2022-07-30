@@ -23,7 +23,6 @@ import { is_account, is_valid_account } from "@utils/getters"
  *       in: query
  *       required: true
  *       description: "Receiver account (EOSIO account)"
- *       example: myaccount123
  *       schema:
  *         type: string
  *         pattern: '^[a-z1-5\.]{1,12}$'

@@ -17,8 +17,8 @@ export default async function handler( req: NextApiRequest, res: NextApiResponse
       },
       tags: [
         {
-          name: "Send",
-          description: "Send tokens to receiver account.",
+          name: "Generate",
+          description: "Generate EOSIO private/public key",
           externalDocs: { description: "Find out more", url: "https://github.com/EOS-Nation/eosio.faucet" },
           version: '0.1.0'
         },
@@ -29,11 +29,11 @@ export default async function handler( req: NextApiRequest, res: NextApiResponse
           version: '0.1.0'
         },
         {
-          name: "Generate",
-          description: "Generate EOSIO private/public key",
+          name: "Send",
+          description: "Send tokens to receiver account.",
           externalDocs: { description: "Find out more", url: "https://github.com/EOS-Nation/eosio.faucet" },
           version: '0.1.0'
-        }
+        },
       ]
     },
     schemaFolders: ['models'],

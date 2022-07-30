@@ -24,7 +24,6 @@ import { is_account, is_valid_key, is_valid_account } from "@utils/getters";
  *       required: true
  *       description: "account to be created (EOSIO account & must be 12 characters)"
  *       schema:
- *         example: myaccount123
  *         type: string
  *         pattern: '^[a-z1-5\.]{12}$'
  *     - name: key
@@ -32,7 +31,6 @@ import { is_account, is_valid_key, is_valid_account } from "@utils/getters";
  *       required: true
  *       description: "EOSIO public key to be used as active/owner permission"
  *       schema:
- *         example: EOS51Dz2VmHEPiXQpE5tmY6ctuQDrgfQFhWzcY1HKsEcSSCtMCUqq
  *         type: string
  *     responses:
  *       '200':
@@ -82,3 +80,4 @@ export default async function handler( req: NextApiRequest, res: NextApiResponse
     return res.status(400).json({ error })
   }
 }
+
